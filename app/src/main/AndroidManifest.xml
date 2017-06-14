@@ -211,26 +211,6 @@
                     android:name="android.appwidget.provider"
                     android:resource="@xml/app_widget_small_info"/>
         </receiver>
-
-        <activity
-                android:name=".ui.activities.SettingsActivity"
-                android:label="@string/action_settings"/>
-        <activity android:name=".ui.activities.PlaylistDetailActivity"/>
-        <activity
-                android:name=".ui.activities.AboutActivity"
-                android:label="@string/action_about"/>
-        <activity
-                android:name=".ui.activities.intro.AppIntroActivity"
-                android:label="@string/intro_label"
-                android:theme="@style/Theme.Intro"/>
-        <activity
-                android:name=".ui.activities.bugreport.BugReportActivity"
-                android:label="@string/report_an_issue"/>
-
-        <activity
-            android:name=".appshortcuts.AppShortcutLauncherActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:launchMode="singleInstance"/>
       
         <!-- Android Auto -->
         <meta-data
