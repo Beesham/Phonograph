@@ -7,7 +7,6 @@ import android.support.annotation.NonNull;
 import com.kabouzeid.gramophone.R;
 import com.kabouzeid.gramophone.loader.LastAddedLoader;
 import com.kabouzeid.gramophone.model.Song;
-import com.kabouzeid.gramophone.util.PreferenceUtil;
 
 import java.util.ArrayList;
 
@@ -28,7 +27,6 @@ public class LastAddedPlaylist extends AbsSmartPlaylist {
 
     @Override
     public void clear(@NonNull Context context) {
-        PreferenceUtil.getInstance(context).setLastAddedCutoffTimestamp(System.currentTimeMillis());
     }
 
 

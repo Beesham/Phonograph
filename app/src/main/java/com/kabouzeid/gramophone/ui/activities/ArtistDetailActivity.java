@@ -194,7 +194,7 @@ public class ArtistDetailActivity extends AbsSlidingMusicPanelActivity implement
 
     private void setUpAlbumRecyclerView() {
         albumRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        albumAdapter = new HorizontalAlbumAdapter(this, getArtist().albums, this);
+        albumAdapter = new HorizontalAlbumAdapter(this, getArtist().albums, true, this);
         albumRecyclerView.setAdapter(albumAdapter);
         albumAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
             @Override
